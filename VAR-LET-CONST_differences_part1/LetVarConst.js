@@ -44,3 +44,14 @@ console.log(TOTAL);
 //as it names says, it is expected to be constant over the time, so
 //its value stays the same. The name of a CONST variable by convention
 //it is written in uppercase.
+const person = {name: "Bob"};
+console.log(person.name);
+console.log(person);
+person.name = "Alice";
+console.log(person.name);
+console.log(person);
+//Although it is possible to change data from a JSON element it is not
+//possible to "redefine" or "update" its structure, i.e.:
+//person = {name: "Bob", age:21};
+//or
+//const person = {name: "Bob", age: 21};
